@@ -22,6 +22,7 @@ from appLibros.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', renderIndex),
+    path('App1/', renderIndex),
     path('juguetes/', juguetes),
     path('electronica/', electronica),
     path('ropa/', ropa),
