@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from appShop.views import *
+from appLibros.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,8 @@ urlpatterns = [
     path('juguetes/', juguetes),
     path('electronica/', electronica),
     path('ropa/', ropa),
+    path("app2/", app2),
+    path('mistborn/', mistborn),
+    path('stormlight/', stormlight),
+    path('sunlit/', sunlit)
 ]

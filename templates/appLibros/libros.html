@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/cosmere_symbol.png">
+    <title>App2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="container mt-5" style="background-image: url(/static/images/Constelaciones.jpg); background-size: cover; zoom: 75%;">
+    <div class="alert alert-dark display-1 text-center">
+        <img src="{% static 'images/cosmere_symbol.png' %}" width="90px" alt="">
+        APP2
+    </div>
+    <div class="row">
+        <div class="col"><a href="/mistborn" class="btn p-3 btn-outline-danger w-100">Nacidos de la Bruma</a></div>
+        <div class="col"><a href="/stormlight" class="btn p-3 btn-outline-info w-100">El Archivo de las Tormentas</a></div>
+        <div class="col"><a href="/sunlit" class="btn p-3 btn-outline-success w-100">El Hombre Iluminado</a></div>
+    </div>
+    <div class="col" style="margin-top: 10rem;">
+        <a href="#" class="btn p-3 btn-outline-warning w-100" >
+            <img src="{% static imagen %}" width="90px" alt=""><br />{{titulo}}
+            <h1 style="margin-top: 25px;">{{dato1}}</h1><br/>
+            <img src="{% static imagenlibro %}" width="350px" alt="">
+            <h3>{{dato2}}</h3><br>
+            <h3>{{dato3}}</h3><br>
+            <h3>{{dato4}}</h3><br>
+        </a>
+    </div>
+    <a href="/electronica" class="btn btn-outline-warning mt-5">Electronica</a>
+    <a href="/juguetes" class="btn btn-outline-warning mt-5">Juguetes</a>
+    <a href="/ropa" class="btn btn-outline-warning mt-5">Ropa</a>
+    <a href="/App2" class="btn btn-outline-success mt-5">Volver...</a>
+    <a href="http://127.0.0.1:8000/App1" class="btn btn-outline-success mt-5">Ir a la Primera App</a>
+</body>
+</html>
